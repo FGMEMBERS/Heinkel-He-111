@@ -42215,7 +42215,7 @@ name "direction"
 loc 7.178729 2.001419 0
 data 9
 direction
-texture "profiles.png"
+texture "texture.png"
 texrep 1 1
 crease 179.000000
 numvert 117
