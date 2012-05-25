@@ -48,6 +48,7 @@
     <object-name>tourtourelle</object-name>
     <object-name>tmp</object-name>
 
+    <object-name>echappes</object-name>
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
@@ -87,6 +88,7 @@
     <object-name>tourtourelle</object-name>
     <object-name>tmp</object-name>
 
+    <object-name>echappes</object-name>
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
@@ -161,7 +163,77 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -2.232 </z-m>
+      <z-m> -1.800 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -6.101 </x-m>
+      <y-m> -3.392 </y-m>
+      <z-m> -0.638 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -6.101 </x-m>
+      <y-m> -1.964 </y-m>
+      <z-m> -0.638 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -6.101 </x-m>
+      <y-m>  3.392 </y-m>
+      <z-m> -0.638 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -6.101 </x-m>
+      <y-m>  1.964 </y-m>
+      <z-m> -0.638 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -4.916 </x-m>
+      <y-m> -2.660 </y-m>
+      <z-m> -2.811 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -4.916 </x-m>
+      <y-m>  2.660 </y-m>
+      <z-m> -2.811 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Patte de queue -->
+  <model>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m>  6.419 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.942 </z-m>
     </offsets>
   </model>
 

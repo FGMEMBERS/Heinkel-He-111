@@ -56,5 +56,42 @@
     </offsets>
   </model>
 
+  <!-- Guns -->
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/Interior/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -8.257 </x-m>
+      <y-m>  0.174 </y-m>
+      <z-m> -0.174 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   -20 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/Interior/Guns/guns.xml</path>
+    <offsets>
+      <x-m>  0.247 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.045 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   -20 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/Interior/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -2.022 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.223 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>    20 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 
