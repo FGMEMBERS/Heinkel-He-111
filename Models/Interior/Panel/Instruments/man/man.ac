@@ -8,7 +8,7 @@ name "cache"
 loc 0 0 -0
 data 5
 cache
-texture "rpm.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 196
@@ -1339,7 +1339,7 @@ name "face"
 loc 0.005857 0 -0
 data 4
 face
-texture "rpm.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 17
@@ -1463,7 +1463,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "rpm.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 296
@@ -3562,7 +3562,7 @@ name "needle"
 loc 0.006273 -0 -0
 data 6
 needle
-texture "rpm.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 14
@@ -3656,7 +3656,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "rpm.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 292

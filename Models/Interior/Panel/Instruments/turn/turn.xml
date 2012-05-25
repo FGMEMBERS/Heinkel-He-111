@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,6 +7,7 @@
   <animation>
     <object-name>fond</object-name>
     <object-name>visses</object-name>
+    <object-name>cache</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <object-name>ball</object-name>
@@ -42,7 +43,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <interpolation> 
       <entry><ind> -3 </ind><dep> -30 </dep></entry>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
@@ -63,7 +64,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
     <interpolation> 
       <entry><ind> -4 </ind><dep> -60 </dep></entry>
       <entry><ind> -3 </ind><dep> -45 </dep></entry>

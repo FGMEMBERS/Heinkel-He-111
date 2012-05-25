@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>vsi.ac</path>
+  <path>man.ac</path>
 
   <animation>
     <object-name>fond</object-name>
@@ -41,18 +41,21 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <property>/engines/engine[1]/mp-osi</property>
+    <min>  0 </min>
+    <max> 60 </max>
     <interpolation>
-      <entry><ind> -2952 </ind><dep>  135 </dep></entry>
-      <entry><ind>     0 </ind><dep>    0 </dep></entry>
-      <entry><ind>  2952 </ind><dep> -135 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 17 </ind><dep>  14 </dep></entry> 
+      <entry><ind> 52 </ind><dep> 346 </dep></entry>
     </interpolation>
     <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
 </PropertyList>
+
 

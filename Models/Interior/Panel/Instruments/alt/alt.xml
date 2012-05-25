@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -6,8 +6,8 @@
 
   <animation>
     <object-name>fond</object-name>
+    <object-name>cache</object-name>
     <object-name>visses</object-name>
-    <object-name>knob</object-name>
     <object-name>face</object-name>
     <object-name>kilodisk</object-name>
     <object-name>needle</object-name>
@@ -29,7 +29,6 @@
 
   <animation>
     <type>material</type>
-    <object-name>knob</object-name>
     <object-name>face</object-name>
     <object-name>kilodisk</object-name>
     <object-name>needle</object-name>
@@ -44,7 +43,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor> 0.11 </factor>
     <axis>
       <x> -1 </x>
@@ -56,7 +55,7 @@
   <animation>
     <type>rotate</type>
     <object-name>kilodisk</object-name>
-    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor> 0.011 </factor>
     <center>
       <x-m>  0.00 </x-m>
@@ -70,7 +69,5 @@
     </axis>
   </animation>
 
-
 </PropertyList>
-
 

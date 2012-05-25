@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
- <path>rpm.ac</path>
+  <path>man.ac</path>
 
   <animation>
     <object-name>fond</object-name>
     <object-name>visses</object-name>
+    <object-name>cache</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
 
@@ -40,15 +41,13 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/engines/engine[1]/rpm</property>
+    <property>/engines/engine[0]/mp-osi</property>
+    <min>  0 </min>
+    <max> 60 </max>
     <interpolation>
-      <entry><ind>    0 </ind><dep>   0 </dep></entry>
-      <entry><ind>  500 </ind><dep>  35 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  70 </dep></entry>
-      <entry><ind> 1500 </ind><dep> 105 </dep></entry>
-      <entry><ind> 1900 </ind><dep> 140 </dep></entry>
-      <entry><ind> 3000 </ind><dep> 225 </dep></entry>
-      <entry><ind> 4500 </ind><dep> 300 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 17 </ind><dep>  14 </dep></entry> 
+      <entry><ind> 52 </ind><dep> 346 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
