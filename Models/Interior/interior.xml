@@ -8,14 +8,17 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
+    <object-name>inttourtourelle</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
   </animation>
 
   <animation>
@@ -23,6 +26,7 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
+    <object-name>intvitretourelle</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -92,6 +96,28 @@
       <heading-deg> 180 </heading-deg>
     </offsets>
   </model>
+
+  <!-- Protection tourelle supérieure -->
+  <animation>
+    <name>IntLaTourelle</name>
+    <object-name>inttourtourelle</object-name>
+    <object-name>intvitretourelle</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntLaTourelle</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.9 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

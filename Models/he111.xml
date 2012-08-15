@@ -141,11 +141,13 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
+    <object-name>vitretourelle</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>vitretourelle</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
@@ -724,9 +726,14 @@
 
   <!-- Protection tourelle supérieure -->
   <animation>
-    <type>translate</type>
-    <object-name>vitretourelle</object-name>
+    <name>LaTourelle</name>
     <object-name>tourtourelle</object-name>
+    <object-name>vitretourelle</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LaTourelle</object-name>
     <property>/instrumentation/doors/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
