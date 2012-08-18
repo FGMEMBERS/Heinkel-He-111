@@ -1,2 +1,2 @@
-aircraft.livery.init("Aircraft/Potez-630/Models/Liveries");
+aircraft.livery.init("Aircraft/Heinkel-He-111/Models/Liveries");
 
