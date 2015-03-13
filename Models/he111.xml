@@ -172,7 +172,7 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking0.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m> -3.392 </y-m>
@@ -181,7 +181,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking0.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m> -1.964 </y-m>
@@ -191,7 +191,7 @@
 
   <!-- Right -->
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking1.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m>  3.392 </y-m>
@@ -200,7 +200,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking1.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m>  1.964 </y-m>
@@ -211,7 +211,7 @@
   <!-- Effets sur le sol -->
   <!-- Roue gauche -->
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/ground/ground0.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground0.xml</path>
     <offsets>
       <x-m> -4.916 </x-m>
       <y-m> -2.660 </y-m>
@@ -221,17 +221,37 @@
 
   <!-- Roue droite -->
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/ground/ground1.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -4.916 </x-m>
       <y-m>  2.660 </y-m>
       <z-m> -2.811 </z-m>
     </offsets>
   </model>
-
+  
+  
+<!-- BOMBS -->
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/bomb.xml</path>
+    <offsets>
+      <x-m>  -4.0 </x-m>
+      <y-m>  0.8 </y-m>
+      <z-m> -1.5 </z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/bomb.xml</path>
+    <offsets>
+      <x-m>  -4.0 </x-m>
+      <y-m>  -0.8 </y-m>
+      <z-m> -1.5 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Patte de queue -->
   <model>
-    <path>Aircraft/Bugatti/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m>  6.419 </x-m>
       <y-m>  0.000 </y-m>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+<path>bomb.ac</path>
+  
+<animation>
+<name>bomb</name>
+<object-name>bomb</object-name>
+</animation>
+
+
+
+<animation>
+<type>select</type>
+<object-name>bomb</object-name>
+<condition>
+<property>/sim/model/hide-bomb</property>
+</condition>
+</animation>
+
+</PropertyList>
