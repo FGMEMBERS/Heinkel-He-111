@@ -3,6 +3,7 @@
 <PropertyList>
 
   <default>
+
     <menu n="10">
       <label>Heinkel He 111</label>
       <enabled type="bool">true</enabled>
@@ -13,15 +14,8 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-      <item>
-        <label>Show/hide bomb</label>
-        <binding>
-          <command>property-toggle</command>
-          <property>/sim/model/hide-bomb</property>
-        </binding>
-      </item>
     </menu>
+
   </default>
 
 </PropertyList>
-

@@ -4,6 +4,11 @@
 
   <path>he111.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Heinkel-He-111/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Heinkel-He-111/Models/Liveries", 10);
@@ -49,15 +54,25 @@
     <object-name>tmp</object-name>
 
     <object-name>echappes</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>axeGC</object-name>
+    <object-name>axeGD</object-name>
+    <object-name>axeGE</object-name>
     <object-name>roueG</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>axeDC</object-name>
+    <object-name>axeDD</object-name>
+    <object-name>axeDE</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
     <object-name>trous</object-name>
-
+    <object-name>cables</object-name>
+    
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
     <object-name>vitretourelle</object-name>
@@ -89,15 +104,25 @@
     <object-name>tmp</object-name>
 
     <object-name>echappes</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>axeGC</object-name>
+    <object-name>axeGD</object-name>
+    <object-name>axeGE</object-name>
     <object-name>roueG</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>axeDC</object-name>
+    <object-name>axeDD</object-name>
+    <object-name>axeDE</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
     <object-name>trous</object-name>
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -106,12 +131,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
@@ -136,25 +155,24 @@
     <object-name>tmp</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Heinkel-He-111/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitretourelle</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitretourelle</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
     <object-name>propblurD</object-name>
-  </animation>
-
-  <!-- Intérieur -->
+  </effect>
+  
+  <!-- Interior -->
   <model>
     <path>Aircraft/Heinkel-He-111/Models/Interior/interior.xml</path>
   </model>
@@ -172,7 +190,7 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking0.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m> -3.392 </y-m>
@@ -181,7 +199,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking0.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking0.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m> -1.964 </y-m>
@@ -191,7 +209,7 @@
 
   <!-- Right -->
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking1.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m>  3.392 </y-m>
@@ -200,7 +218,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/cranking/cranking1.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/cranking/cranking1.xml</path>
     <offsets>
       <x-m> -6.101 </x-m>
       <y-m>  1.964 </y-m>
@@ -211,7 +229,7 @@
   <!-- Effets sur le sol -->
   <!-- Roue gauche -->
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground0.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground0.xml</path>
     <offsets>
       <x-m> -4.916 </x-m>
       <y-m> -2.660 </y-m>
@@ -221,37 +239,17 @@
 
   <!-- Roue droite -->
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground1.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -4.916 </x-m>
       <y-m>  2.660 </y-m>
       <z-m> -2.811 </z-m>
     </offsets>
   </model>
-  
-  
-<!-- BOMBS -->
-  <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/bomb.xml</path>
-    <offsets>
-      <x-m>  -4.0 </x-m>
-      <y-m>  0.8 </y-m>
-      <z-m> -1.5 </z-m>
-    </offsets>
-  </model>
-  
-    <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/bomb.xml</path>
-    <offsets>
-      <x-m>  -4.0 </x-m>
-      <y-m>  -0.8 </y-m>
-      <z-m> -1.5 </z-m>
-    </offsets>
-  </model>
-  
+
   <!-- Patte de queue -->
   <model>
-    <path>Aircraft/Heinkel-He-111/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/Bugatti/Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m>  6.419 </x-m>
       <y-m>  0.000 </y-m>
@@ -295,7 +293,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-	<value>1500</value>
+        <value>1500</value>
       </less-than>
     </condition>
   </animation>
@@ -367,7 +365,7 @@
     <condition>
       <less-than>
         <property>engines/engine[1]/rpm</property>
-	<value>1500</value>
+        <value>1500</value>
       </less-than>
     </condition>
   </animation>
@@ -584,9 +582,13 @@
   <animation>
     <name>TrainGaucheComplet</name>
     <object-name>roueG</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>axeGC</object-name>
+    <object-name>axeGD</object-name>
+    <object-name>axeGE</object-name>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>TrainGaucheComplet</object-name>
@@ -607,13 +609,83 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGC</object-name>
+    <object-name>axeGD</object-name>
+    <object-name>axeGE</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -75 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> -75 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.85835 </x-m>
+      <y-m> -2.66000 </y-m>
+      <z-m> -2.03425 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGD</object-name>
+    <object-name>axeGE</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 210 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 210 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m> -2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGD</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -85 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> -85 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m> -2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <animation>
     <name>TrainDroitComplet</name>
     <object-name>roueD</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>axeDC</object-name>
+    <object-name>axeDD</object-name>
+    <object-name>axeDE</object-name>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>TrainDroitComplet</object-name>
@@ -634,9 +706,76 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDC</object-name>
+    <object-name>axeDD</object-name>
+    <object-name>axeDE</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -75 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> -75 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.85835 </x-m>
+      <y-m>  2.66000 </y-m>
+      <z-m> -2.03425 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDD</object-name>
+    <object-name>axeDE</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 210 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> 210 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m>  2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDD</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -85 </dep></entry>
+      <entry><ind> 0.3 </ind><dep> -85 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m>  2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <animation>
     <name>TrainArriereComplet</name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
   </animation>
 
@@ -663,35 +802,87 @@
 
   <!-- Compression -->
   <animation>
-    <type>translate</type>
+    <name>RougeGauche</name>
     <object-name>roueG</object-name>
-    <property>gear/gear[0]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
+    <object-name>axeGB</object-name>
   </animation>
-
+  
   <animation>
     <type>translate</type>
-    <object-name>roueD</object-name>
-    <property>gear/gear[1]/compression-norm</property>
+    <object-name>RougeGauche</object-name>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1280 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> -0.0306 </x>
+      <y>  0.0000 </y>
+      <z>  0.1243 </z>
     </axis>
   </animation>
-
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGC</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 00 </dep></entry>
+      <entry><ind> 1 </ind><dep> 10 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m> -2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>RougeDroite</name>
+    <object-name>roueD</object-name>
+    <object-name>axeDB</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RougeDroite</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1280 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.0306 </x>
+      <y>  0.0000 </y>
+      <z>  0.1243 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDC</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 00 </dep></entry>
+      <entry><ind> 1 </ind><dep> 10 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.19419 </x-m>
+      <y-m>  2.66000 </y-m>
+      <z-m> -1.68984 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
@@ -754,7 +945,7 @@
   <animation>
     <type>translate</type>
     <object-name>LaTourelle</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> -0.9 </dep></entry>
@@ -766,5 +957,50 @@
     </axis>
   </animation>
 
+  <!-- Lighting effects -->
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 6.90497 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 2.78365 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -2.77298 </x-m>
+      <y-m> -11.26958 </y-m>
+      <z-m>   0.70760 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -2.76298 </x-m>
+      <y-m> -11.26958 </y-m>
+      <z-m>   0.70760 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.77298 </x-m>
+      <y-m> 11.26958 </y-m>
+      <z-m>  0.70760 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Heinkel-He-111/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.76298 </x-m>
+      <y-m> 11.26958 </y-m>
+      <z-m>  0.70760 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-
